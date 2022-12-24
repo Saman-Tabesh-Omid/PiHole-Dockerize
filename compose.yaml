@@ -7,6 +7,7 @@ services:
       WEBPASSWORD: "4696048pouria"
       WEB_PORT: "444"
     restart: "unless-stopped"
+    runtime: "youki"
     volumes:
       - type: volume
         source: pihole
