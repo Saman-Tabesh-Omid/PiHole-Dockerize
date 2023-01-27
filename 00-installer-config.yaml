@@ -1,14 +1,14 @@
-# This is the network config written by 'subiquity'
+# This is the network config written by 'pouriasa'
 network:
   ethernets:
     enp0s25:
       dhcp4: false
       dhcp6: false
       addresses:
-        - 192.168.100.1/16
+        - 192.168.100.2/16
       routes:
         -  to: default
-           via: 192.168.100.2
+           via: 192.168.100.1
       nameservers:
-        addresses: [192.168.100.1]
+        addresses: [192.168.100.2]
   version: 2

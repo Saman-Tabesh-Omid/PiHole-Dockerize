@@ -7,7 +7,7 @@ services:
       WEBPASSWORD: "4696048pouria"
       WEB_PORT: "444"
     restart: "unless-stopped"
-    runtime: "youki"
+    runtime: "crun"
     volumes:
       - type: volume
         source: pihole
@@ -22,4 +22,6 @@ services:
 
 volumes:
   pihole:
+    name: pihole
   dnsmasq:
+    name: dnsmasq
