@@ -6,6 +6,7 @@ services:
       WEBPASSWORD: "4696048pouria"
       WEB_PORT: "80"
       DNSMASQ_LISTENING: "all"
+      LOCAL_IPV4: ${IP}
     restart: "unless-stopped"
     runtime: "crun"
     ports:
